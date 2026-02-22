@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chris Robinson NFC | BAIRD</title>
+</head>
+
+<style>
+    html,
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        background-color: #333;
+    }
+
+    .container {
+        /* background-color: #f5f5f5; */
+        margin: auto;
+        width: 400px;
+        height: 800px;
+        position: relative;
+    }
+
+    .photoholder {
+        width: 100%;
+        height: 300px;
+        border-top-left-radius: 1em;
+        border-top-right-radius: 1em;
+        background-color: red;
+        position: absolute;
+    }
+
+    .photoholder img {
+        width: auto;
+        height: 100%;
+    }
+
+    h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 32px;
+        font-weight: 100;
+        padding-bottom: 10px;
+    }
+
+    h3 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        font-weight: 100;
+    }
+
+    h6 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        font-weight: 100;
+    }
+
+    .profile {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 5px solid white;
+        display: block;
+        position: absolute;
+        top: 200px;
+        left: 20px;
+        background-color: white;
+        z-index: 1;
+        box-shadow: 0 0 1em #333;
+        overflow: hidden;
+    }
+
+    .profile img {
+        width: 100%;      
+        height: 100%;      
+        object-fit: cover;
+    }
+
+    .card {
+        width: 100%;
+        height: 600px;
+        position: absolute;
+        top: 250px;
+        border-top-right-radius: 1em;
+        background-color: #f5f5f5;
+        box-shadow: 0 0 1em #333;
+    }
+
+    .words {
+        /* background-color: purple; */
+        position: absolute;
+        top: 65px;
+        left: 20px;
+        line-height: 5px;
+        text-align: left;
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+        margin-top: 250px;
+    }
+
+    .svgscale {
+        width: 40px;
+        height: auto;
+        filter: drop-shadow(0 0 2em #333);
+    }
+
+    .btn-info {
+        padding: 10px;
+        background: #002d5e;
+        width: max-content;
+        border-radius: 1em;
+        text-decoration: none;
+        color: #f5f5f5;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .info-btn {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .link-bar {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 70px;
+    }
+
+    .link-bar a {
+        padding: 15px;
+        background-color: #002d5e;
+        width: 250px;
+        border-radius: 1rem;
+        border: 1px solid #333;
+        text-align: center;
+        color: #f5f5f5;
+        align-self: center;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+    }
+
+    .link-word {
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        left: 20px;
+        font-weight: 100;
+        top: 310px;
+    }
+
+.link-word h3 {
+        font-size: 20px;
+    }
+
+.bargrad {
+    display: block;
+    position: absolute;
+    top: 245px;
+    width: 90%;
+    height: 3px;
+    /* background-image: linear-gradient(to right, #020024, #090979, #00D4FF); */
+    background-color: black;
+    filter: opacity(50%);
+    border-radius: 5px;
+    /* box-shadow: 0 0 5px 1px #333; */
+    margin-left: 20px;
+}
+
+</style>
+
+<body>
+    <!-- Container for the whole webpage -->
+    <div class="container">
+        <div class="photoholder">
+            <img src="./IMG_1513.jpeg" alt="cover-photo">
+        </div>
+        <div class="profile">
+            <img src="./poser.JPG" alt="Profile Picture">
+        </div>
+        <!-- Main Content on the Card -->
+        <div class="card">
+            <div class="words">
+                <h1>Nathaniel Baird</h1>
+                <h3>Manager | ICT | Maintenance</h3>
+                <div class="info-btn">
+                <a href="tel:+640450415317" class="btn-info">0450 415 317</a>
+                <a href="mailto:natbaird06@gmail.com" class="btn-info">natbaird06@gmail.com</a>
+                </div>
+            </div>
+
+            <div class="bargrad"></div>
+            <br>
+
+            <!-- Social Links -->
+            <div class="social-links">
+                <a href="https://www.facebook.com/nathaniel.baird.18/"><img src="./iconizer-facebook.svg" alt="icon-facebook" class="svgscale"></a>
+                <a href="https://www.instagram.com/nathaniel.baird/"><img src="./iconizer-instagram.svg" alt="icon-instagram" class="svgscale"></a>
+                <a href="https://www.youtube.com/@nathanielbaird101"><img src="./iconizer-youtube.svg" alt="icon-youtube" class="svgscale"></a>
+                <a href="https://petergriffen67.netlify.app/"><img src="./iconizer-browser-safari.svg" alt="icon-browser" class="svgscale"></a>
+            </div>
+
+            <div class="link-word">
+                <h3>Links</h3>
+            </div>
+            <div class="link-bar">
+                <a>Explore</a>
+                <a>Websites</a>
+                <a>Info</a>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>
